@@ -24,6 +24,9 @@ git clone --depth=1 https://github.com/DHDAXCW/dhdaxcw-app
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 git clone --depth=1 https://github.com/linkease/istore
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages
+git clone --depth=1 https://github.com/vernesong/OpenClash
+git clone --depth=1 https://github.com/nikkinikki-org/OpenWrt-nikki
 popd
 
 # add luci-app-mosdns
