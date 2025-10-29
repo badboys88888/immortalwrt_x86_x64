@@ -119,13 +119,14 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
         
 # 先定义一个 step 生成日期 tag
+# 先定义一个 step 生成带 v 前缀的日期 tag
 - name: Set release tag
   id: tag
   run: |
-    DATE_TAG=$(date +%Y.%m.%d-%H%M)
+    DATE_TAG=v$(date +%Y.%m.%d-%H%M)
     echo "release_tag=$DATE_TAG" >> $GITHUB_OUTPUT
 
-# 然后发布 release
+# 发布 release
 - name: Publish to release
   uses: softprops/action-gh-release@v1
   if: !cancelled()
